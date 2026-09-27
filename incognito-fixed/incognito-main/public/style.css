@@ -1,0 +1,81 @@
+#historique_game {
+  opacity: 0.9;
+}
+
+#titre {
+  overflow: hidden;
+  text-align: center;
+}
+
+#titre:before,
+#titre:after {
+  background-color: #000000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+#titre:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+#titre:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+#titre2 {
+  overflow: hidden;
+  text-align: center;
+}
+
+#titre2:before,
+#titre2:after {
+  background-color: #1260cc;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+#titre2:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+#titre2:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.zoom-in-out-box {
+  margin: 24px;
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(252 165 165);
+}
